@@ -1,5 +1,6 @@
  <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,34 +11,33 @@
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <!-- Left Side -->
-    <div class="left">
+        <!-- ฝั่งซ้าย -->
+        <section class="left">
 
-        <h1>PORTFOLIO</h1>
+            <h1>Portfolio</h1>
 
-        <nav>
+            <nav>
 
-            <a href="works.html">1. Works Page</a>
+                <a href="works.html">1. Works Page</a>
 
-            <a href="about.html">2. About Me</a>
+                <a href="about.html">2. About Me</a>
 
-            <a href="contact.html">3. Contact Page</a>
+                <a href="contact.html">3. Contact Page</a>
 
-        </nav>
+            </nav>
+
+        </section>
+
+        <!-- ฝั่งขวา -->
+        <section class="right">
+
+            <img src="images/profile.jpg" alt="Profile">
+
+        </section>
 
     </div>
-
-
-    <!-- Right Side -->
-    <div class="right">
-
-        <img src="images/profile.jpg" alt="My Photo">
-
-    </div>
-
-</div>
 
 </body>
 </html>
