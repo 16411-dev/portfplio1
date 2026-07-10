@@ -1,9 +1,7 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="th">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
@@ -11,33 +9,7 @@
 
 <body>
 
-    <div class="container">
-
-        <!-- ฝั่งซ้าย -->
-        <section class="left">
-
-            <h1>Portfolio</h1>
-
-            <nav>
-
-                <a href="works.html">1. Works Page</a>
-
-                <a href="about.html">2. About Me</a>
-
-                <a href="contact.html">3. Contact Page</a>
-
-            </nav>
-
-        </section>
-
-        <!-- ฝั่งขวา -->
-        <section class="right">
-
-            <img src="images/profile.jpg" alt="Profile">
-
-        </section>
-
-    </div>
+    <h1>Portfolio</h1>
 
 </body>
 </html>
