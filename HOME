@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Left Side -->
+    <div class="left">
+
+        <h1>PORTFOLIO</h1>
+
+        <nav>
+
+            <a href="works.html">1. Works Page</a>
+
+            <a href="about.html">2. About Me</a>
+
+            <a href="contact.html">3. Contact Page</a>
+
+        </nav>
+
+    </div>
+
+
+    <!-- Right Side -->
+    <div class="right">
+
+        <img src="images/profile.jpg" alt="My Photo">
+
+    </div>
+
+</div>
+
+</body>
+</html>
