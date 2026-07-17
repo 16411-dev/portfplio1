@@ -1,57 +1,32 @@
 <!DOCTYPE html>
 <html lang="th">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <!-- ฝั่งซ้าย -->
-      <section class="right">
-    <img src="g01.jpg" alt="Profile">
-</section>
+    <!-- ฝั่งซ้าย -->
+    <section class="left">
 
-            <h1>Portfolio</h1>
+        <h1>Portfolio</h1>
 
-            <nav>
-                <a href="works.html">1. Works Page</a>
-                <a href="about.html">2. About Me</a>
-                <a href="contact.html">3. Contact Page</a>
-            </nav>
+        <nav>
+            <a href="works.html">1. Works Page</a>
+            <a href="about.html">2. About Me</a>
+            <a href="contact.html">3. Contact Page</a>
+        </nav>
 
-        </section>
+    </section>
 
-        <!-- ฝั่งขวา -->
-        <section class="right"></section>
+    <!-- ฝั่งขวา -->
+    <section class="right"></section>
 
-    </div>
+</div>
 
 </body>
 </html>
-
-.right{
-    width:10%;
-    height:100vh;
-
-    background:
-        linear-gradient(
-            to right,
-            #ffecb3 0%,
-            rgba(255,236,179,.95) 10%,
-            rgba(255,236,179,.75) 20%,
-            rgba(255,236,179,.35) 30%,
-            rgba(255,236,179,0) 40%
-        ),
-        url("g01.jpg");   /* <-- ใส่ตรงนี้ */
-
-    background-size:cover;
-    background-position:right center;
-    background-repeat:no-repeat;
-}
