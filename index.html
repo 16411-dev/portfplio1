@@ -1,55 +1,131 @@
-<!DOCTYPE html>
-<html lang="th">
+/* ==========================
+   Reset
+========================== */
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-    <link rel="stylesheet" href="style.css">
-</head>
+/* ==========================
+   Body
+========================== */
 
-<body>
+body{
+    height:100vh;
+    overflow:hidden;
+}
 
-    <div class="container">
+/* ==========================
+   Layout
+========================== */
 
-        <!-- ฝั่งซ้าย -->
-        <section class="left">
+.container{
+    display:flex;
+    width:100%;
+    height:100vh;
+}
 
-            <h1>Portfolio</h1>
+/* ==========================
+   Left
+========================== */
 
-            <nav>
-                <a href="works.html">1. Works Page</a>
-                <a href="about.html">2. About Me</a>
-                <a href="contact.html">3. Contact Page</a>
-            </nav>
+.left{
+    width:50%;
+    background:#ffecb3;
 
-        </section>
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 
-        <!-- ฝั่งขวา -->
-        <section class="right"></section>
+    padding-left:80px;
+}
 
-    </div>
+.left h1{
+    font-size:70px;
+    margin-bottom:50px;
+    color:#fbc02d;
+}
 
-</body>
-</html>
+/* ==========================
+   Menu
+========================== */
+
+nav{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+nav a{
+    text-decoration:none;
+    font-size:28px;
+    color:#333;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ff9800;
+    transform:translateX(10px);
+}
+
+/* ==========================
+   Right
+========================== */
 
 .right{
-    width:40%;
+    width:50%;
     height:100vh;
 
     background:
         linear-gradient(
             to right,
             #ffecb3 0%,
-            rgba(255,236,179,0.95) 10%,
-            rgba(255,236,179,0.75) 20%,
-            rgba(255,236,179,0.35) 30%,
-            rgba(255,236,179,0) 40%
+            rgba(255,236,179,.95) 8%,
+            rgba(255,236,179,.75) 16%,
+            rgba(255,236,179,.45) 24%,
+            rgba(255,236,179,0) 35%
         ),
         url("g01.jpg");
 
     background-size:cover;
-    background-position:center;
+    background-position:right center;
     background-repeat:no-repeat;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width:768px){
+
+    .container{
+        flex-direction:column;
+    }
+
+    .left,
+    .right{
+        width:100%;
+    }
+
+    .left{
+        height:50%;
+        padding:40px;
+    }
+
+    .right{
+        height:50%;
+        background-position:center;
+    }
+
+    .left h1{
+        font-size:48px;
+    }
+
+    nav a{
+        font-size:22px;
+    }
+
 }
