@@ -1,4 +1,5 @@
 /* Reset */
+
 *{
     margin:0;
     padding:0;
@@ -12,11 +13,14 @@ body{
 }
 
 /* Layout */
+
 .container{
     display:flex;
     width:100%;
     height:100vh;
 }
+
+/* Left */
 
 .left{
     width:50%;
@@ -31,21 +35,21 @@ body{
 }
 
 .left h1{
-    font-size:70px;
+    font-size:72px;
     color:#fbc02d;
-    margin-bottom:50px;
+    margin-bottom:40px;
 }
 
 nav{
     display:flex;
     flex-direction:column;
-    gap:20px;
+    gap:18px;
 }
 
 nav a{
     text-decoration:none;
-    font-size:28px;
     color:#333;
+    font-size:28px;
     transition:.3s;
 }
 
@@ -55,28 +59,50 @@ nav a:hover{
 }
 
 /* Right */
+
 .right{
     width:50%;
     height:100vh;
+    position:relative;
+    overflow:hidden;
+}
 
-    background:
-        linear-gradient(
-            to right,
-            #ffecb3 0%,
-            rgba(255,236,179,.95) 12%,
-            rgba(255,236,179,.75) 22%,
-            rgba(255,236,179,.35) 32%,
-            rgba(255,236,179,0) 45%
-        ),
-        url("g01.jpg");
+.right img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center center;
+    display:block;
+}
 
-    background-size:cover;
-    background-position:right center;
-    background-repeat:no-repeat;
+/* เฟดตรงรอยต่อ */
+
+.right::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    width:180px;
+    height:100%;
+
+    background:linear-gradient(
+        to right,
+        #ffecb3 0%,
+        rgba(255,236,179,.9) 25%,
+        rgba(255,236,179,.5) 60%,
+        rgba(255,236,179,0) 100%
+    );
+
+    pointer-events:none;
 }
 
 /* Responsive */
-@media(max-width:768px){
+
+@media (max-width:768px){
 
 .container{
     flex-direction:column;
