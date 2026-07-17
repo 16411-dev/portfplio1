@@ -29,16 +29,15 @@ body{
 ========================== */
 
 .left{
-    width:60%;
+    width:50%;
     background:#ffecb3;
+
     display:flex;
     flex-direction:column;
     justify-content:center;
-    padding-left:80px;
-    position:relative;
-    z-index:2;
-}
 
+    padding-left:80px;
+}
 .left h1{
     font-size:70px;
     color:#fbc02d;
