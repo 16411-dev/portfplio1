@@ -1,48 +1,72 @@
-<!DOCTYPE html>
-<html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Works Page</title>
+/* Reset */
 
-    <link rel="stylesheet" href="works.css">
-</head>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-<body>
+body{
+    background:#000;
+    color:#fff;
+    height:100vh;
+    overflow:hidden;
+}
 
-<div class="container">
+.container{
+    width:100%;
+    height:100vh;
+    position:relative;
+    overflow:hidden;
+}
 
-    <!-- ข้อความ -->
-    <section class="content">
+.background{
+    position:absolute;
+    inset:0;
+    background:url("background.jpg") center/cover no-repeat;
+    z-index:-2;
+}
 
-        <h1>Works Page</h1>
+.background::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.35);
+}
 
-        <div class="line"></div>
+.content{
+    width:50%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding-left:80px;
+    position:relative;
+    z-index:20;
+}
 
-        <p class="subtitle">Character Design</p>
+.content h1{
+    font-size:72px;
+}
 
-        <div class="description">
+.line{
+    width:220px;
+    height:3px;
+    background:#fff;
+    margin:15px 0;
+}
 
-            <h2>Project Name</h2>
+.subtitle{
+    font-size:22px;
+    color:#ccc;
+    margin-bottom:50px;
+}
 
-            <p>
-                ใส่รายละเอียดผลงานของคุณตรงนี้
-                สามารถเขียนอธิบายแนวคิด
-                โปรแกรมที่ใช้ และขั้นตอนการออกแบบได้
-            </p>
-
-        </div>
-
-    </section>
-
-    <!-- รูปตัวละคร -->
-    <section class="image">
-
-        <img src="character.png" alt="Character">
-
-    </section>
-
-</div>
-
-</body>
-</html>
+.character{
+    position:absolute;
+    right:0;
+    bottom:0;
+    height:95vh;
+    z-index:10;
+}
