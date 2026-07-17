@@ -1,58 +1,51 @@
 <!DOCTYPE html>
 <html lang="th">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <!-- ฝั่งซ้าย -->
-        <section class="left">
+    <section class="left">
 
-            <h1>Portfolio</h1>
+        <h1>Portfolio</h1>
 
-            <nav>
-                <a href="works.html">1. Works Page</a>
-                <a href="about.html">2. About Me</a>
-                <a href="contact.html">3. Contact Page</a>
-            </nav>
+        <nav>
+            <a href="works.html">1. Works Page</a>
+            <a href="about.html">2. About Me</a>
+            <a href="contact.html">3. Contact Page</a>
+        </nav>
 
-        </section>
+    </section>
 
-        <!-- ฝั่งขวา -->
-       <section class="right">
-    <img src="g01.jpg" alt="Profile">
-</section>
+    <section class="right">
+        <img src="g01.jpg" alt="Profile">
+    </section>
 
-    </div>
+</div>
 
 </body>
 </html>
 
-.right{
-    width:50%;
+.right{ width:50%;
     height:100vh;
     position:relative;
     overflow:hidden;
 }
 
-.right img{
-    width:100%;
+.right img{ width:100%;
     height:100%;
     object-fit:cover;
     object-position:right center;
     display:block;
 }
 
-.right::before{
-    content:"";
+.right::before{content:"";
     position:absolute;
     top:0;
     left:0;
