@@ -213,12 +213,11 @@ body{
     position:absolute;
     right:70px;
     bottom:70px;
-
     left:auto;
 
     text-align:right;
 
     width:450px;
 
-    color:#fff;
+    color:#000;
 }
