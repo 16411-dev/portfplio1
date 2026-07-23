@@ -1,5 +1,3 @@
-/* Reset */
-
 *{
     margin:0;
     padding:0;
@@ -9,64 +7,90 @@
 
 body{
     background:#000;
-    color:#fff;
-    height:100vh;
     overflow:hidden;
 }
+
+/* พื้นที่ทั้งหมด */
 
 .container{
+    position:relative;
     width:100%;
     height:100vh;
-    position:relative;
-    overflow:hidden;
 }
+
+/* รูปเต็มจอ */
 
 .background{
-    position:absolute;
-    inset:0;
-    background:url("background.jpg") center/cover no-repeat;
-    z-index:-2;
-}
-
-.background::after{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,.35);
-}
-
-.content{
-    width:50%;
+    width:100%;
     height:100%;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    padding-left:80px;
-    position:relative;
-    z-index:20;
+    object-fit:cover;
+    display:block;
 }
 
-.content h1{
-    font-size:72px;
+/* ข้อความ */
+
+.text{
+
+    position:absolute;
+
+    left:70px;
+    bottom:70px;
+
+    color:white;
+
+    max-width:450px;
+
+    background:rgba(0,0,0,.35);
+
+    padding:25px;
+
+    border-radius:12px;
+
+}
+
+.text h1{
+
+    font-size:52px;
+
+    margin-bottom:10px;
+
 }
 
 .line{
-    width:220px;
+
+    width:180px;
     height:3px;
-    background:#fff;
-    margin:15px 0;
+
+    background:white;
+
+    margin-bottom:15px;
+
 }
 
 .subtitle{
-    font-size:22px;
-    color:#ccc;
-    margin-bottom:50px;
+
+    font-size:18px;
+
+    letter-spacing:2px;
+
+    color:#dddddd;
+
+    margin-bottom:25px;
+
 }
 
-.character{
-    position:absolute;
-    right:0;
-    bottom:0;
-    height:95vh;
-    z-index:10;
+.text h2{
+
+    font-size:30px;
+
+    margin-bottom:15px;
+
+}
+
+.detail{
+
+    font-size:17px;
+
+    line-height:1.8;
+
 }
