@@ -183,3 +183,43 @@ body{
     line-height:1.8;
 
 }
+
+/* ผลงานแต่ละชิ้น */
+
+.work{
+    position:relative;
+    width:100%;
+    height:100vh;
+}
+
+.work .bg{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+/* เส้นคั่น */
+
+.divider{
+    width:80%;
+    height:3px;
+    background:#fff;
+    margin:60px auto;
+}
+
+/* ข้อความด้านขวา */
+
+.right{
+    position:absolute;
+    right:70px;
+    bottom:70px;
+
+    left:auto;
+
+    text-align:right;
+
+    width:450px;
+
+    color:#fff;
+}
