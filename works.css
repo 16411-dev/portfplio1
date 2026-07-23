@@ -122,19 +122,7 @@ body{
 
     color:#e0e0e0;
 
-}    bottom:70px;
-
-    color:white;
-
-    max-width:450px;
-
-    background:rgba(0,0,0,.35);
-
-    padding:25px;
-
-    border-radius:12px;
-
-}
+}    
 
 .text h1{
 
@@ -219,5 +207,15 @@ body{
 
     width:450px;
 
+    color:#000;
+}
+
+/* เปลี่ยนสีข้อความของงานที่ 2 */
+
+.info.right h2{
+    color:#000;
+}
+
+.info.right p{
     color:#000;
 }
