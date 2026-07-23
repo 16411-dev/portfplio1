@@ -197,17 +197,24 @@ body{
 
 /* ข้อความด้านขวา */
 
-.right{
+.info.right{
     position:absolute;
     right:70px;
     bottom:70px;
     left:auto;
 
-    text-align:right;
-
     width:450px;
 
-    color:#000;
+    text-align:right;
+}
+
+.info.right h2{
+    color:#000 !important;
+}
+
+.info.right p{
+    color:#000 !important;
+}
 }
 
 /* เปลี่ยนสีข้อความของงานที่ 2 */
